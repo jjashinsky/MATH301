@@ -1,0 +1,116 @@
+---
+title: "L06 Presentation"
+author: "Jacob Jashinsky and Joseph Luchs"
+class: "Math 301 Bonnie Moon"
+topic: "Chapter 3.3"
+title-page: no
+output: HomeworkBYUI::homework_pdf
+---
+# Problem 3.3.8
+
+Let $S$ and $T$ be nonempty bounded subsets of $\mathbb{R}$ with $S \subseteq T$. Prove that $\inf T \le \inf S \le \sup S \le \sup T$. 
+
+## Definitions
+
+The following definitions will be used
+
+**Maximum:** If $m$ is an upper bound of $S$ and $m \in S$, then $m$ is called the maximum of $S$. 
+
+**Minimum:** If $m$ is a lower bound of $S$ and $m \in S$, then $m$ is called the minimum of $S$. 
+
+**Supremum:**	If $S$ is bounded above the least upper bound of $S$ is called its Supremum iff
+
+a. $m \ge s$ for all $s \in S$ and,
+
+b. if $m' < m$, then there exists $s' \in S$ such that $s' > m'$. 
+
+**Infimum:** If $S$ is bounded below the greatest upper bound of $S$ is called its Infimum iff 
+
+a. $m \le s$ for all $s \in S$ and,
+
+b. if $m' > m$, then there exists $s' \in S$ such that $s' < m'$. 
+
+
+## Assumptions
+
+We define the statement above as $p \Rightarrow q$, where $p$ and $q$ are,
+
+$$
+p: S \ \text{and} \ T \ \text{be nonempty bounded subsets of} \  \mathbb{R} \ \text{with} \  S \subseteq T
+$$
+
+$$
+q: (\inf T \le \inf S) \wedge (\inf S \le \sup S ) \wedge ( \sup S \le \sup T)
+$$
+We also define $\sim q$ as,
+
+$$
+\sim q: (\inf T > \inf S) \vee (\inf S > \sup S ) \vee ( \sup S > \sup T)
+$$
+
+The structure of the proof will be as follows
+
+$$
+(p \Rightarrow q) \Leftrightarrow [(p \ \wedge \sim q) \Rightarrow c]
+$$
+
+Because of the nature of $\sim q$, this proof will be done in the following three cases, 
+
+$$
+\begin{aligned}
+(1) \ \ \ \ p &\wedge (\inf T > \inf S) \Rightarrow c   \\
+(2) \ \ \ \ p &\wedge (\inf S > \sup S ) \Rightarrow c  \\
+(3) \ \ \ \  p &\wedge ( \sup S > \sup T) \Rightarrow c
+\end{aligned}
+$$
+
+
+## Proof:
+
+### Statement 1
+
+$$
+(1) \ \ \ \ p \wedge (\inf T > \inf S) \Rightarrow c
+$$
+
+Here the contradiction will lie within the hypothesis  (see page 30).
+
+Let $\inf T=m$, $\inf S=q$ and assume $[p \wedge (\inf T > \inf S)] \Rightarrow c$ to be true. 
+
+Part (b) of the definition of infimum for $\inf S$, states that if $m' > m$, then there exists $s' \in S$ such that $s' < m'$. So any element in $s' \in S$ must be larger than $m$. The same logic applies to $T$, in that any $t' \in T$ must be greater than $q$.  
+
+Now because we assumed that $(\inf T > \inf S)$ to be true or that $(q > m)$ the logic above implies that there exists an $s \in S$ such that $s < t \in T$. 
+
+Further, this means that some element in $S$ does not exist in $T$.
+
+In conjunction with $p$, this is a contradiction, as $T$ must contain all of the elements in $S$ for $S \subseteq T$ to be true as was assumed. 
+
+### Statement 2
+
+$$
+(2) \ \ \ \ p \wedge (\inf S > \sup S ) \Rightarrow c
+$$
+
+The contradiction lies in $(\inf S > \sup S)$, because by definition $(\inf S \le \sup S)$ is true.
+
+### Statement 3
+
+$$
+(3) \ \ \ \  p \wedge ( \sup S > \sup T) \Rightarrow c
+$$
+
+Similar to the logic of the first statement the contradiction lies in the hypothesis.
+
+Let $\sup T=m$, $\sup S=q$ and assume $[p \wedge (\sup S > \sup T)] \Rightarrow c$ to be true. 
+
+Part (b) of the definition of infimum for $\sup S$, states that if $m' < m$, then there exists $s' \in S$ such that $s' > m'$. So any element in $s' \in S$ must be smaller than $m$. The same logic applies to $T$, in that any $t' \in T$ must be smaller than $q$.  
+
+Now because we assumed that $(\sup S > \sup T)$ to be true or that $(m > q)$ the logic above implies that there exists an $s \in S$ such that $s > t \in T$. 
+
+Further, this means that some element in $S$ does not exist in $T$.
+
+In conjunction with $p$, this is a contradiction, as $T$ must contain all of the elements in $S$ for $S \subseteq T$ to be true as was assumed. 
+
+### Conclusion
+
+Thus by the contradiction of all three cases, our original statement, $(p \Rightarrow q)$ is true.

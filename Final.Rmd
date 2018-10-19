@@ -1,0 +1,256 @@
+---
+title: "Math 301 Final Exam"
+author: "Jacob Jashinsky"
+date: "April 10, 2018"
+output: pdf_document
+---
+
+### Problem 1 Part A
+
+| set | Int $S$  |  Bd $S$ | Open/Closed/Neither | $S'$ | Cl$(S)$ |
+|-----|-----------|---------|---------------------|------|---------|
+| a   | $\varnothing$ | $\mathbb{N}$ | closed | $\varnothing$ | $\mathbb{N}$| 
+|b    | $\varnothing$ | $\mathbb{R}$ | neither | $\mathbb{R}$ | $\mathbb{R}$ |
+| c   | $\varnothing$ | $[-\sqrt{3},\sqrt{3}]$ | neither |$\mathbb{R}$|$\mathbb{R}$| 
+| d  | $(4,10) \cup (10,12)$| $\{ 4,10,12 \}$ | neither | $[4,12]$ | $[4,12]$ | 
+|e    | $(- \infty, 5)$| {5}| open | $(- \infty, 5]$ | $(- \infty, 5]$| 
+
+
+### Problem 1 Part B
+
+**i.**
+
+$(\sim p \Rightarrow c),  p$
+
+|p|$\sim p$|c|$\sim p \Rightarrow c$|$[\sim p \Rightarrow c] \Leftrightarrow p$|
+|-|--------|-|----------------------|------------------------------------------|
+|T|F       |F|             T        |     T                                    |
+|F|T       |F|            F         |     T                                    |
+
+These two statements are equivalent.
+
+**ii.**
+
+$[(p\land \sim q)\Rightarrow r], [(p \Rightarrow \sim q) \Rightarrow r]$ 
+
+|p|q|~q|r|$(p\land \sim q)$|$[(p\land \sim q)\Rightarrow r]$|$(p \Rightarrow \sim q)$|$[(p \Rightarrow \sim q) \Rightarrow r]$|
+|-|-|--|-|-----------------|--------------------------------|------------------------|----------------------------------------|
+|T|T|F |T|F                |T                               |F                       |T                                       |
+|T|T|F |F|F                |T                               |F                       |T                                       |
+|T|F|T |T|T                |T                               |T                       |T                                       |
+|T|F|T |F|T                |F                               |T                       |F                                       |
+|F|T|F |T|F                |T                               |T                       |T                                       |
+|F|T|F |F|F                |T                               |T                       |F                                       |
+|F|F|T |T|F                |T                               |T                       |T                                       |
+|F|F|T |F|F                |T                               |T                       |F                                       |
+
+These two statements are **not** equivalent.
+
+
+### Problem 1 Part B
+
+**i.** 
+
+$s_n=(-1)^n/(n+1)$
+
+$\lim (s_n) = 0$
+
+**ii.**
+
+$s_n = 2^{3n}/3^{3n} = 8^n/9^n = (8/9)^n$
+
+$\lim (s_n) = 0$
+
+**iii.**
+
+$s_n = \frac{(3+n-n^2)}{(1+2n)}$
+
+$\lim \frac{(3+n-n^2)}{(1+2n)} = \lim \frac{(3/n^2+n/n^2-n^2/n^2)}{(1/n^2+2n/n^2)} = \lim \frac{(3/n^2+1/n-1)}{(1/n^2+2/n)}= -1/0$
+
+So it diverges to $-\infty$
+
+**iv.** 
+
+$s_n = n!/n^n$
+
+Using the ratio test theorem, 
+
+$\lim \frac{s_{n+1}}{s_n} = \frac{\lim (n+1)!}{(n+1)^{n+1}} \times \frac{n^n}{n!} = \lim (\frac{n}{n+1})^n \rightarrow L'hopitals \rightarrow \lim = e$.
+
+Therefore $s_n$ diverges to $\infty$. 
+
+**v.** 
+
+$s_n = (-1)^n/n$
+
+$\lim s_n = 0$
+
+**vi.** If a monotone sequence if bounded, then it converges. 
+
+True by Monotone Convergence Theorem. 
+
+**vii.** If a sequence is bounded, then it is convergent.
+
+False. $s_n = (-1)^n$ is bounded but not convergent. 
+
+**viii.** If a convergent sequence is bounded, then it is monotone. 
+
+False. $s_n = (-1)^n/n$ is bounded and convergent but it is not monotone. 
+
+**ix.** If sequences $s_n$ and $t_n$ converge to $s$ and $t$ respectively, then $s_n \cdot t_n$ converges to $s \cdot t$. 
+
+True by theorem 4.2.1 in the book. 
+
+**x.** Given sequences $s_n$ and $t_n$, if $s_n < t_n$ for all $n$ and $\lim s_n = \infty$, then $\lim t_n = \infty$. 
+
+True. Since $t_n$ is always larger than $s_n$ its limit will also diverge. Theorem 4.2.12 also supports this. 
+
+
+
+### Problem 3 Part A
+
+**i.**
+
+I know two types of structures for proof by contradiction. 
+
+One is $(\sim p \Rightarrow c) \Leftrightarrow p$ and the other is $[(p \land \sim q) \Rightarrow c] \Leftrightarrow (p \Rightarrow q)$. 
+
+In the case of the first. We assume the negation of $p$ and show that a contradiction exists. This shows that $\sim p$ is false, thereby making $p$ true. 
+
+In the later structure we negate $(p \Rightarrow q)$ to get $(p \land \sim q)$ and assume it to be true. The next step is to show that assuming this leads to a contradiction, thereby making $(p \Rightarrow q)$ true because its negation is false. 
+
+These proofs can be useful when it is easier to show the negation is false. It can be easier sometimes this way because it may only take a single counter example to show the contradiction, whereas proving the original implication might require proving infinite cases.  
+
+**ii.**
+
+The goal of proof by induction is to show that $P(n)$ is true for all of $n \in \mathbb{N}$. But to do this two requirements must be met. 
+
+The first is called the basis of induction. Here you must show that the base case is true. The base case is the first $n$ where $P(n)$ is defined, usually this means $P(1)$. 
+
+Next is called the induction step. Assuming $P(k)$ is true for all $k \in \mathbb{N}$ you must show that $P(K+1)$ is true.
+
+Proof by induction is appropriate for statements $P(n)$ where $n \in \mathbb{N}$.
+
+
+My example is: Prove that $1^3+2^3+3^3+...+n^3 = \frac{1}{4} n^2(n+1)^2$ for all $n \in \mathbb{N}$.
+
+So our goal is to show that no matter what $n$ is used in the statement both sides will always be the same. 
+
+##### Proof: 
+
+Let $P(n)$ be the statement 
+
+$$
+1^3+2^3+3^3+...+n^3 = \frac{1}{4} n^2(n+1)^2 \ \ \ \ \text{where} \ n \in \mathbb{N}
+$$
+
+To establish the basis of induction we show that $P(1)$ is true.
+
+By plugging 1 into both sides of the statement it is easy to see that $P(1)$ is true because $1=1$.
+
+For the induction step we must verify $P(k+1)$ is true, assuming that $P(k)$ is true for some $k \in \mathbb{N}$, or that $1^3+2^3+3^3+...+k^3 + (k+1) ^3 = \frac{1}{4} (k+1)^2((k+1)+1)^2$ is true for some $k \in \mathbb{N}$.
+
+Assume $P(k)$
+$$
+1^3+2^3+3^3+...+k^3 = \frac{1}{4} k^2(k+1)^2  \ \ \ \ \ \text{is true for some} \ k \in \mathbb{N}
+$$
+
+Adding $(k+1)^3$ to both sides of the statement above, yields:
+
+$$
+1^3+2^3+3^3+...+k^3 + (k+1)^3 = \frac{1}{4} k^2(k+1)^2 + (k+1)^3
+$$
+
+After a lot of simplification the statement above, yields:
+
+$$
+1^3+2^3+3^3+...+k^3 + (k+1)^3= \frac{1}{4}(k+1)^2 ((k+1)+1)^2
+$$
+
+The above statement is the same as $P(k+1)$, therefore $P(k+1)$ is true.
+
+Now because we have proven the basis of induction and the induction step we know that $P(n)$ is true for all $n \in \mathbb{N}$. 
+
+
+### Problem 3 Part B
+
+**i.** Let $S$ and $T$ be subsets of $\mathbb{R}$. Prove or disprove the following: $\text{cl}(S \cup T) = (\text{cl}S)\cup (\text{cl}T)$.
+
+#### Direct Proof:
+
+We wish to prove the following: $\text{cl}(S \cup T) = (\text{cl}S)\cup (\text{cl}T)$.
+
+Let $S$ and $T$ be subsets of $\mathbb{R}$.
+
+Consider only the left side of the statement above statement:  
+ 
+$$
+=\text{cl}(S \cup T).  \\
+$$
+Recall the definition of closure is defined by cl$S$=$S\cup S'$ where $S'$ is the set of accumulation points. We can express the statement above as the following:
+
+$$
+=(S \cup T) \cup (S \cup T)'.
+$$
+Now consider only the right side of the statement above statement. We have  
+ 
+$$
+=(\text{cl}S)\cup (\text{cl}T). 
+$$
+By the definition of closure we can express it as the following:
+
+$$
+=(S \cup S') \cup (T \cup T') 
+$$
+
+$$
+=(S \cup T) \cup (S' \cup T').   
+$$
+
+To prove that the two sides are equal I need to show that $(S' \cup T')$ is equal to $(S \cup T)'$.  
+
+In the case that $T=\varnothing$ the set of accumulation points of an empty set is the empty set. From there it is easy to see that $(S' \cup T')$ is equal to $(S \cup T)'$, because $(S')$ is equal to $(S)'$.
+
+For the case that $T \ne \varnothing$ I will refer to the definition of accumulation point. 
+
+A point $x \in \mathbb{R}$ is an accumulation point of $S$ if every deleted neighborhood of $x$ contains a point of $S$. 
+
+Let $x \in S'$. Every deleted neighborhood of $x$ will always contain a point of $(S \cup T)$ because the set contains all of $S$. So for every $x \in S'$, $x \in (S \cup T)'$.    
+
+Let $r \in {T'}$. Every deleted neighborhood of $r$ will always contain a point of $(S \cup T)$ because the set contains all of $T$. So for every $r \in T'$, $r \in (S \cup T)'$.
+
+Thus we see that every element of $S'$ and $T'$ will also be an element of $(S\cup T)'$. It follows that every element of $(S\cup T)'$ is also an element of $S'\cup T'$. So $(S' \cup T') = (S \cup T)'$
+
+Therefore $\text{cl}(S \cup T) = (\text{cl}S)\cup (\text{cl}T)$.
+
+
+
+**ii.**
+
+If $S$ is a compact subset of $\mathbb{R}$, and $T$ is closed subset of $S$, then $T$ is compact. Prove using the definition of compactness. 
+
+The following will be used in the proof below.
+
+Compact: A set $S$ is said to be compact iff every open cover of $S$ contains a finite subcover.
+
+Heine-Borel Theorem: A subset of $\mathbb{R}$ is compact iff $S$ is closed and bounded.
+
+3.4.10 Theorem: The union of any collection of open sets is an open set.
+
+#### Proof: 
+
+Let $S$ be a compact subset of $\mathbb{R}$ and $T$ be a closed subset of $S$.
+
+Further, let $U$ be an open cover of $T$.
+
+The complement of the closed set $T$, $(\mathbb{R} \setminus T)$ is an open set and by theorem 3.4.10 the union, $U \cup (\mathbb{R} \setminus T)$ is an open set. This union is also an open cover of $S$ because it covers all elements in $S$. 
+
+Since $S$ is compact there exists a finite subcover, denoted $U'$, from the open cover $U \cup (\mathbb{R} \setminus T)$ such that $U' \subseteq [U \cup (\mathbb{R} \setminus T)]$.
+
+$U'$ covers $S$, but since $T \subseteq S$, $U'$ will also cover $T$. 
+
+Because $T \cap (\mathbb{R} \setminus T) = \varnothing$ we can remove $(\mathbb{R} \setminus T)$ from $U'$ and it would still cover $T$. That removal would make $U' \subseteq U$ and it means that $U'$ is a finite subcover of $T$. 
+
+Thus every open cover of $T$ contains a finite subcover. 
+
+Therefore $T$ is compact. 

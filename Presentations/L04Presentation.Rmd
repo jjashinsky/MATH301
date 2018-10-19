@@ -1,0 +1,49 @@
+---
+title: "Lesson 4 Presentation"
+output:
+  pdf_document: default
+header-includes: 
+  - \usepackage{amsmath}
+---
+##### Jacob Jashinsky as Scribe and Caleb Spear as Editor
+
+## Problem 2.3.2
+
+**Mark each statement as True or False. Justify each answer.**
+
+**a.** If $f:A \to B$ and $C$ is nonempty subset of $A$, then $f(C)$ is a nonempty subset of $B$.
+
+True. For $f$ to be a function every element in $A$, which includes the subset $C$, will map to a $b \in B$. Therefore, $f(C)$ will also be a subset of $B$. 
+
+\
+
+**b.** If $f:A \to B$ is surjective and $y \in B$, then $f^{-1}(y) \in A$.
+
+True. Since the function is surjective rng$f=B$ and $f^{-1}: B \to A$. 
+
+\
+
+**c.** If $f:A \to B$ and $D$ is nonempty subset of $B$ then $f^{-1}(D)$ is a nonempty subset of $A$.
+
+False, $D$ may include elements that are not in the range of $f$, and the inverse of $f$ will not map elements outside of the range back to $A$.  
+
+\
+
+**d.** The composition of two surjective functions is always surjective.
+
+True, by Theorem 2.3.20 on page 72, we know that composition preserves properties of being injective and surjective.
+
+\
+
+**e.** If $f:A \to B$ is bijective, then $f^{-1}B \to A$ is bijective.
+
+True. Since $f$ is bijective each $a \in A$ maps to a unique $b \in B$. Therefore the inverse would also map every every $b \in B$ back to every element $a \in A$, which would make the inverse bijective.  
+
+\
+
+**f.** The identity function maps $\mathbb{R}$ onto \{ 1 \}.
+
+False. An identity function would map the set $\mathbb{R}$ back onto $\mathbb{R}$.  
+
+\
+

@@ -1,0 +1,100 @@
+---
+title: "L07 Presentation"
+author: "Jacob Jashinsky, Joseph Luchs, Ben Bragg"
+class: "MATH 301"
+professor: "Sis. Bonnie Moon"
+topic: "Section 3.4 and 3.5"
+title-page: no
+output: HomeworkBYUI::homework_pdf
+---
+# Problem 3.4.21 
+
+Let $A$ be a nonempty open subset of $\mathbb{R}$ and let $\mathbb{Q}$ be the set of rationals. Prove that $A \cap \mathbb{Q} \ne \varnothing$.
+
+
+
+### Theorems and Definitions
+
+The following, from pages 135 and 137, will be used in the proof below.
+
+**Theorem 3.4.7:** $A$ is open iff every point in $A$ is an interior point of $A$. 
+
+**Interior Point:** Let $A \subseteq \mathbb{R}$. A point $x$ in $\mathbb{R}$ is an interior point of $S$ if there exists a neighborhood $N$ of $x$ such that $N \subseteq A$. 
+
+
+### Proof: 
+
+Let $A$ be a nonempty open subset of $\mathbb{R}$ and let $\mathbb{Q}$ be the set of rationals.
+
+From theorem 3.4.7 we know that every point $x$ in set $A$ is an interior point. For each $x$ to be an interior point, by the definition above, the neighborhood of $x$, $N(x; \epsilon>0)$, must be a subset of $A$.  
+
+Since every $x \in A$ is an interior point then every $x$ has a neighborhood $N(x; \epsilon>0)$, which is an open interval containing real numbers. 
+
+Because $\mathbb{Q}$ is dense in $\mathbb{R}$, we know that there is an infinite number of rational numbers within each one of those neighborhoods of $x$.
+
+Since $N(x; \epsilon>0) \subseteq A$ it then follows that $A \cap \mathbb{Q} \ne \varnothing$.
+
+# Problem 3.5.8
+
+If $S$ is a compact subset of $\mathbb{R}$, and $T$ is closed subset of $S$, then $T$ is compact. 
+
+(a) Prove this using the definition of compactness. 
+
+(b) Prove this using Heine-Borel theorem. 
+
+### Theorems and Definitions
+
+The following will be used in the proof below.
+
+**Compact:** A set $S$ is said to be compact iff every open cover of $S$ contains a finite subcover. 
+
+**Heine-Borel Theorem:** A subset of $\mathbb{R}$ is compact iff $S$ is closed and bounded.
+
+**3.4.10 Theorem:** The union of any collection of open sets is an open set.
+
+### Proof for part a: 
+
+Let $S$ be a compact subset of $\mathbb{R}$ and $T$ be a closed subset of $S$.
+
+Further, let $\mathscr{F}$ be an open cover of $T$.
+
+The complement of the closed set $T$, $(\mathbb{R} \setminus T)$ is an open set and by theorem 3.4.10 the union, $\mathscr{F} \cup (\mathbb{R} \setminus T)$ is an open set. This union is also an open cover of $S$ because it covers all elements in $S$. 
+
+Since $S$ is compact there exists a finite subcover, denoted $\mathscr{F}'$, from the open cover $\mathscr{F} \cup (\mathbb{R} \setminus T)$ such that $\mathscr{F}' \subseteq [\mathscr{F} \cup (\mathbb{R} \setminus T)]$.
+
+$\mathscr{F}'$ covers $S$, but since $T \subseteq S$ it will also cover $T$. 
+
+Because $T \cap (\mathbb{R} \setminus T) = \varnothing$ we can remove $(\mathbb{R} \setminus T)$ from $\mathscr{F}'$ and it would still cover $T$. That removal would make $\mathscr{F}' \subseteq \mathscr{F}$ and it means that $\mathscr{F}'$ is a finite subcover of $T$. 
+
+Thus every open cover of $T$ contains a finite subcover. 
+
+Therefore $T$ is compact. 
+
+
+### Proof for part b: 
+
+Let $S$ be a compact subset of $\mathbb{R}$ and $T$ be a closed subset of $S$.
+
+Heine-Borel theorem states that if $T$ is closed and bounded then it is compact. 
+
+$T$ is closed so we must show that $T$ is bounded to prove that $T$ is compact.  
+
+To show this we conclude some properties of $S$.
+
+Since $S$ is compact, by the Hiene-Borel theorem, $S$ is closed and bounded. 
+
+Because $T \subseteq S$, $T$ is also a bounded subset of $\mathbb{R}$.
+
+Thus $T$ is bounded and closed 
+
+Therefore $T$ is compact.  
+
+
+
+
+
+
+
+
+
+

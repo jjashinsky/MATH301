@@ -1,0 +1,73 @@
+---
+title: "Lesson 2 Presentation"
+output:
+  pdf_document: default
+---
+##### Jacob Jashinsky and Caleb Spear
+
+## Problem 1.4.14
+
+If $x/(x-2) \le 3$, then $x < 2$ or $x \ge 3$, where $x$ is a real number.  
+
+To establish the logic for the proof we start by defining are statements $p$ and $q$.
+
+$$
+p: \frac{x}{x-2} \le 3  
+$$
+
+
+$$
+q: x \ge 3 \ \text{or} \ x < 2  
+$$
+
+
+Converting the original statement above into short hand we get,
+
+$$
+p \Rightarrow q
+$$
+
+
+**Proof:**
+
+We prove this directly by letting $p$ be true,
+
+$$
+\frac{x}{x-2} \le 3
+$$
+
+For simplicity we solve for $x$ by multiplying $(x-2)$ on both sides of the inequality.
+
+$$
+x \le 3(x-2)
+$$
+
+Distributing the 3,
+
+$$
+x \le 3x - 6  
+$$
+
+Subtract $x$ and add 6 to both sides,
+
+$$
+6 \le 2x
+$$
+
+Divide by 2 so that $p$ becomes,
+
+$$
+x \ge 3  
+$$
+
+Now consider the implication $p \Rightarrow q$
+
+$$
+x \ge 3 \ \text{implies} \ x \ge 3 \ \text{or} \ x < 2  
+$$
+
+Since $p$ is true we know that $x \ge 3$ which will also make the consequent true.  
+
+$$
+4x
+$$

@@ -1,0 +1,36 @@
+---
+title: "Lesson 1 Presentation"
+output:
+  pdf_document: default
+  html_document:
+    code_folding: hide
+    theme: yeti
+header-includes: 
+  - \usepackage{amsmath}
+---
+##### Jacob Jashinsky and Caleb Spear
+
+## Problem 1.1.1
+
+**Mark each statement True or False. Justify each answer.**
+
+(a) In order to be classified as a statement, a sentence must be true.
+
+**Answer**: False, it must be either true or false.  
+
+(b) Some statements are both true and false. 
+
+**Answer**: False, the statement must be one or the other, and not both.
+
+(c) When statement p is true, its negation ~p is false. 
+
+**Answer**: True, by definition of negation. 
+
+(d) A statement and its negation may both be false. 
+
+**Answer**: False, by definition of negation, they must be opposites. 
+
+(e) In mathematical logic, the word “or” has an inclusive meaning.
+
+**Answer**: True, the inclusive meaning allows two statements to be one or the other or both.  
+

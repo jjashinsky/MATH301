@@ -1,0 +1,287 @@
+---
+title: "Math 301 Vocabulary"
+author: "Jacob Jashinsky"
+output:
+  pdf_document: default
+  HomeworkBYUI::homework_pdf: default
+title-page: no
+---
+
+### Sections 1.1 - 1.2
+
+**Statement:** This is a declarative statement that is classified as either true or false. It cannot be true or false in some cases but always. No ambiguity is allowed. 
+
+**Negation:** It is the logical opposite of a statement. If $p$ represents a true statement then $\sim p$ is a false statement. 
+
+**Conjunction:** combining of two statements. $p$ and $q$ is the same as $p \land p$. The conjunction is true only when both statements are true. 
+
+**Disjunction:** Combining two statements by using the term or, denoted $p \lor q$. Using only the inclusive definition, meaning that both p and q could happen. It’s not just one or the other.
+
+**Implication or Conditional:** If p, then q, denoted $p \Rightarrow q$. It’s an if-statement. An implication is false if the antecedent is true and the consequent is false. 
+
+**Antecedent:** In the statement, If $p$, then $q$, the $p$ is the antecedent. 
+
+**Consequent:** In the statement, If $p$, then $q$, the $q$ is the consequent. 
+
+**Biconditional:** The statement of the form $p$ if and only if $q$, denoted $p \iff q$. Which is implying two conditional statements, $p \Rightarrow q$ and $q \Rightarrow p$, hence the prefix bi.
+
+**Tautology:** When a compound statement is true in all cases it is called a tautology. "the negation of a conjunction is logically equivalent to the dis-junction of the negations." See page 25 for a list. 
+ 
+**Universal Quantifier:** is the symbol, $\forall$, which mean, for all. So for example, $\forall \  x,p(x)$, for all of $x$, the function is true. 
+
+**Existential Quantifier:** There exists, denoted $\exists$ so for example. $\exists \ x \ni p$ which reads, there exists and x such that the statement $p$ is true. 
+
+**Such that:** is the symbol, $\ni$. 
+
+
+### Sections 1.3 - 1.4
+
+**Inductive Reasoning :** Drawing a conclusion from observations. Inductive reasoning leads to a conjucture.
+
+**Counterexample:**	Using an example to prove the original statement false, this can be used when $\forall$ statements are used. 
+
+**Deductive reasoning:** Applying a general principle to a particular case. (the general case could mean using n).
+
+**Hypothesis:**	When an implication is a theorem. The antecedent is the hypothesis. 
+
+**Conclusion:**	When an implication is a theorem, the consequent is the conclusion. 
+
+**Contrapositive:** The contrapostive of the statement $p \Rightarrow q$ is $\sim q \Rightarrow \sim p$. They are logically equivalent. 
+
+**Converse:**	The converse of the statement $p \Rightarrow q$ is $q \Rightarrow p$. They are not always logically equivalent.  
+
+**Inverse:** The inverse of the statement $p \Rightarrow q$ is $\sim p \Rightarrow \sim q$. They are not always logically equivalent.
+
+**Contradiction:** A contradiction can be shown by negating a statement and showing that there is a contradiction. 
+
+**Building blocks of proof:**	
+
+**Proof by Contradiction:**	To prove by contradiction we assume $p$ and $\sim q$ and deduce the contradiction.
+
+**Proof by cases:** Some proofs are large or encompasses a general region. The proof could be broken up into cases that each could have their own proof. 
+
+
+### Sections 2.1 - 2.2
+
+**Subset:**	$A \subseteq B$, A is a subset of B. A is contained in B.
+
+**Proper subset:** $A \subset B$, A is a subset of B. A is contained in B, but there exists an element in B that is not in A. 
+
+**Equal Sets:** $A=B$, if $A \subseteq B$ and $B \subseteq A$.
+
+**Interval:** Is a set of real numbers, (a,b), [a,b], [a,b), (a,b].
+
+**Empty set:** A set with no elements. $\varnothing$. An empty set is a subset of every set. 	
+
+**Union:** $A \cup B$, read "A union B", or read "A or B". 
+
+**Intersection:**	$A \cap B$, read "A intersect B", or read "A and B". 
+
+**Complement:**	$A \setminus B = \{ x: \in A \cap x \notin B \}$. This is the complement of B.  
+
+**Disjoint sets:** Two set that do not intersect. Also called mutually exclusive. 
+
+**Indexed family:**	$\bigcap_{j \in J} A_j = \{ x: x \in A_j \ \text{for some} j \in J  \}$ and also $\bigcup_{j \in J} A_j = \{ x: x \in A_j \ \text{for some} \ j \in J  \}$
+
+**Ordered pairs:** $(a,b) = \{ \{a \}, \{ a, b \}  \}$
+
+**Cartesian product:** $A \times B$ is the set of all ordered pairs $(a,b)$ such that $a \in A$ and $b \in B$. $A \times B = \{ (a,b): a \in A \ \text{and} \ b \in B \}$. 
+
+**Relation between A and B:**	Is a subset of the ordered pairs of a cartesian product. 
+
+**Equivalence Relation:**	Is a relation that has the properties of being reflexive, symmetric, and transitive for all $x,y,z \in S$.
+
+**Reflexive:** $x\text{R}x$
+
+**Symmetric:** If $x\text{R}y$, then $y\text{R}x$.
+
+**Transitive:** If $x\text{R}y$ and $y\text{R}z$, then $x\text{R}z$ exists. 
+
+**Partition:** Is a subset of some set $S$. Every element in $S$ is in a subset and there is no overlap between the subsets. 
+
+
+### Sections 2.2 - 2.3
+
+**Domain of f:** denoted dom$f$. Set A is the domain of the function $f: A \to B$. 
+
+**Range of f:**	denoted dom$f$, is the set of all second elements of members of $f$, where $b$ is the second element of the ordered pairs $(a,b) \in f$.  
+
+**Codomain:** Set B is the codomain of the function $f: A \to B$. 
+
+**Function from A to B:** A function from $A$ to $B$, $f: A \to B$ is  nonempty relation $f \subseteq A \times B$ that satisfies the following assumptions. 1. Existence: For all $a$ in $A$ there exists a $b$ in $B$ such that $(a,b) \in f$. 2. Uniqueness: If $(a,b) \in f$ and $(a,c) \in f$, then $b=c$. (vertical line test). 
+
+**Surjective:** A function is surjective if $B=\text{rng}f$.  
+
+**Injective:** A function is injective (one to one) if $f(a) = f(a')$ and $a=a'$.
+
+**Bijective:** A function is bijective if it is both injective and surjective. 
+
+**Image of a set:** For the function $f: A \to B$, let $C \subseteq A$. $f(C)$ is called the image of $C$ in $B$.   
+
+**Pre-image of a set:** For the function $f: A \to B$, let $D \subseteq B$. $f^{-1}(D)$ is called the Pre-image of $D$ in $A$.   
+
+**Composition of functions:**	$f \circ g: A \to C$, where $f: A \to B$ and $g: B \to C$. 
+
+**Inverse function:** $f^{-1}= \{ (y,x) \in B \times A: (x,y) \in f \}$
+
+**Identity function:** A function defined on set $A$ that maps element in $A$ onto itself. 
+
+**Equinumerous:**	$S \sim T$, the two sets are set equivalent if there exists a bijective function that maps $S$ on to $T$, $f: S \to T$.
+
+**Finite:**	A set $S$ is finite if $S = \varnothing$, or if there exists $n \in \mathbb{N}$ and bijective function $f: \{ 1, 2, 3,...,n \} \to S$.
+
+**Infinite:** If a set is not finite it is infinite. 
+
+**Cardinal number:** It is the number of elements in a set or the $n$ in the set $I_n$. 	
+
+**Transfinite:** If a cardinal number is not finite then it is transfinite. 
+
+**Denumerable:** A set is denumerable if there exists a bijection $f:\mathbb{N} \to S$. 
+
+**Countable:** It is a finite or denumerable set. 
+
+**Uncountable:** It is a set that is not countable. 	
+
+**Power set:** $\wp(S)$ is the collection of all the subsets of $S$. 
+
+### Section 3.1
+
+**Well-ordering property of N:** If $S$ is a nonempty subset of $\mathbb{N}$, then there exists an element $m \in S$ such that $m \le k$ for all $k \in S$.  
+
+**Principle of mathematical induction:** Let $P(n)$ be a statement that is either true or false for each $n \in \mathbb{N}$. then $P(n)$ is true for all $n \in \mathbb{N}$, provided that,
+
+a. $P(1)$ is true, and 
+
+b. for each $k \in \mathbb{N}$, if $P(k)$ is true, then $P(k+1)$ is true. 
+
+**Basis for induction:** Part (a) of the principle of mathematical induction. 	
+
+**Induction step:**	Part (b) of the principle of mathematical induction.  	
+
+**Induction hypothesis:** Assuming that $P(k)$ is true in part (b) is known as the induction hypothesis. 
+
+### Section 3.3
+
+**Upper bound:** Let $S$ be s subset of $\mathbb{R}$. If there exists a real number $m$ such that $m \ge s$ for all $s \in S$, then $m$ is called an upper bound, and $S$ is bounded above. 	
+
+**Lower bound:** Let $S$ be s subset of $\mathbb{R}$. If there exists a real number $m$ such that $m \le s$ for all $s \in S$, then $m$ is called an lower bound, and $S$ is bounded below.	
+
+**Bounded set:** The set $S$ is bounded if it is bounded above and below. 	
+
+**Maximum:** If $m$ is an upper bound of $S$ and $m \in S$, then $m$ is called the maximum of $S$. $m=\text{max} \ S$.   
+
+**Minimum:** If $m$ is a lower bound of $S$ and $m \in S$, then $m$ is called the minimum of $S$. $m=\text{min} \ S$. 
+
+**Supremum:**	If $S$ is bounded above the least upper bound of $S$ is called its supremum, denoted, $\sup S$, iff 
+
+a. $m \ge s$ for all $s \in S$ and,
+
+b. if $m' < m$, then there exists $s' \in S$ such that $s' > m'$. 
+
+**Infimum:** If $S$ is bounded below the greatest upper bound of $S$ is called its Infimum, denoted, $\inf S$, iff 
+
+a. $m \le s$ for all $s \in S$ and,
+
+b. if $m' > m$, then there exists $s' \in S$ such that $s' < m'$. 
+
+
+**Completeness axiom:** Every nonempty subset $S$ of $\mathbb{R}$ that is bounded above has a least upper bound. That is, sup $S$ exists and is a real number. 
+
+**Archimedean property:** The set $\mathbb{N}$ of natural numbers is unbounded above in $\mathbb{R}$.
+
+**Density of the rationals:** $\mathbb{Q}$ is done in $\mathbb{R}$, or that between any two real numbers there is a rational number. 
+
+
+### Sections 3.4 and 3.5
+
+**Neighborhood:**	Let $\epsilon > 0$ and $x \in \mathbb{R}$. A neighborhood of $x$ is a set of the form $N(x;\epsilon ) = \{ y \in \mathbb{R}: \lvert x-y \rvert < \epsilon \}$
+
+**Deleted neighborhood:** Let $\epsilon > 0$ and $x \in \mathbb{R}$. A deleted neighborhood of $x$ is a set of the form $N^*(x;\epsilon ) = \{ y \in \mathbb{R}: 0 < \lvert x-y \rvert < \epsilon \}$	
+
+**Interior Point:** Let $S \subseteq \mathbb{R}$. A point $x$ in $\mathbb{R}$ is an interior point of $S$ if there exists a neighborhood $N$ of $x$ such that $N \subseteq S$ 
+
+**Boundary Point:**	If for every neighborhood $N$ of $x$, $N \cap S \ne \varnothing$ and $N \cap (\mathbb{R} \setminus S) \ne \varnothing$, then $x$ is called a boundary point of $S$.   
+
+**Closed set:**	A set $S$ is closed iff its complement $\mathbb{R} \setminus S$ is open.  
+
+**Open set:** A set $S$ is open iff $S = \text{int} \ S$.  
+
+**Accumulation point:**	Let $S$ be a subset of $\mathbb{R}$. A point $x$ in $\mathbb{R}$ is an accumulation points of $S$ if every deleted neighborhood of $x$ contains a point of $S$. The set is denoted $S'$  
+
+**Isolated point:**	If $x \in S$ and $x \notin S'$, then $x$ is called an isolated point of $S$. 
+
+**Closure of a set:** Denoted $\text{cl} \ S$. $\text{cl} \ S = S \cup S'$, or that $\text{cl} \ S = S \cup \text{bd} S$.   
+
+**Compact Set:** A set $S$ is said to be compact if whenever it is contained in the union of a family $F$ of open sets, it is contained in the union of some finite number of the sets in $F$. 
+
+**Open Cover:**	If $F$ is a family of open sets whos union contains $S$, then $F$ is called an open cover of $S$.  
+
+**Subcover:** If $Z \subseteq F$ and $Z$ is also an open cover of $S$, then $Z$ is called a subcover of $S$. 
+
+**Heine-Borel theorem:** A subset of $\mathbb{R}$ is compact iff $S$ is closed and bounded.	
+
+**Bolzano-Weierstrass theorem:** If a bounded subset $S$ of $\mathbb{R}$ contains infinitely many points, then there exists at least one points in $\mathbb{R}$ that is an accumulation point of $S$. 
+
+### Section 4.1
+
+**Sequence:** A sequence is a function whose domain is the set $\mathbb{N}$ of natural numbers, denoted $(s_n)$. 
+
+**Convergent Sequence:** $(s_n)$ is said to converge to the real numbers $s$, provided that 
+
+For every $\epsilon > 0$, there exists a $N \in \mathbb{N}$ such that $\forall \  n \in \mathbb{N}$, $n \ge N$ implies that $| s_n - s | < \epsilon$. 
+
+**Limit of a Sequence:** If $(s_n)$ converges to $s$, then $s$ is called the limit of the sequence $(s_n)$. $\lim s_n = s$
+
+**Divergent Sequence:** A series that does not converge to  a real number is divergent. 
+
+**Bounded Sequence:** $(s_n)$ is said to be bounded if the range $\{ s_n: n \in \mathbb{N} \}$ is a bounded set, that is, if there exists an $M \ge 0$ such that $| s_N | \le M$ for all $n \in \mathbb{N}$. 
+
+
+### Sections 4.2 - 4.3
+
+**4.2.1 Limit Theorems:** Suppose $\lim s_n = s$ and $\lim t_n = t$, then
+
+a. $\lim (s_n + t_n) = s+t$
+
+b. $\lim (ks_n) = ks$ and $\lim (k+s_n) = k+s$.
+
+c. $\lim(s_n t_n) = st$
+
+d. $\lim(s_n / t_n) = s/t$
+
+**Diverge to $+ \infty$:** A sequence $(s_n)$ diverges to $+\infty$, and we write $\lim s_n = + \infty$ provided that for every $m \in \mathbb{R}$ there exists an $N \in \mathbb{N}$ such that $n \ge N$ implies that $s_n > M$. 
+
+**Diverge to $- \infty$:** A sequence $(s_n)$ diverges to $-\infty$, and we write $\lim s_n = - \infty$ provided that for every $m \in \mathbb{R}$ there exists an $N \in \mathbb{N}$ such that $n \ge N$ implies that $s_n < M$. 
+
+**Theorem 4.2.4:** Suppose $\lim s_n = s$ and $\lim t_n = t$. If $s_n \le t_n$ for $n \in \mathbb{N}$ then $s < t$. 
+
+In other words. so long as you can show that $s_n$ is always less than $t_n$ than the limit of $s_n$ is less than the limit of $t_n$.  
+
+**Theorem 4.2.12:** Let $s_n \le t_n$ for all $n \in \mathbb{N}$.
+
+a. If $\lim s_n = +\infty$, then $\lim t_n = +\infty$.
+ 
+b. If $\lim t_n = -\infty$, then $\lim s_n = -\infty$.
+
+Because the we know the limit of one we can show the limit of the other because we know the relationship $s_n \le t_n$. 
+
+**Theorem 4.2.13:** Let $s_n$ be a sequence of positive numbers, then $\lim (s_n) = +\infty$ iff $\lim(1/s_n)=0$. 
+
+**Increasing Sequence:** The sequence $s_n$ is increasing if $s_n \le s_{n+1}$ for all $n \in \mathbb{N}$. 
+
+**Decreasing Sequence:** The sequence $s_n$ is decreasing if $s_n \ge s_{n+1}$ for all $n \in \mathbb{N}$. 
+
+**Monotone Sequence:** A sequence is monotone if it is increasing or decreasing. 
+
+**Cauchy Sequence:** A sequence $(s_n)$ of real numbers is said to be a Cauchy sequence if for each $\epsilon > 0$ there exists an $N \in \mathbb{N}$ such that $m$, $n \ge N$ implies that $| s_n - s_m | < \epsilon$.
+
+**Cauchy Convergence Criterion:** A sequence of real numbers is convergent iff it is a Cauchy sequence. 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+---
+title: "L08 Presentation"
+author: "Jacob Jashinsky, Joseph Luchs, Ben Bragg"
+class: "MATH 301"
+professor: "Bonnie Moon"
+topic: "Section 4.1"
+title-page: no
+output: HomeworkBYUI::homework_pdf
+---
+# Problem 4.1.12
+
+a. Suppose that $\lim s_n = 0$. If $(t_n)$ is a bounded sequence, prove that $\lim(s_n t_n)=0$. 
+
+b. Show by an example that the boundedness of $(t_n)$ is a necessary condition in part (a). 
+
+
+### Part (a) 
+
+
+### Proof:
+
+To prove this directly let $s_n$ and $s_n t_n$ be a sequences and $\lim s_n = 0$. 
+
+Now suppose that $(t_n)$ is bounded.
+
+Recall the definition of bounded is that $(t_n)$ is said to be bounded if the range $\{ t_n : n \in \mathbb{N} \}$ is a bounded set, that is, if there exists a real number $M \ge 0$ such that $| t_n | \le M$ for all $n \in \mathbb{N}$.
+
+Using theorem 4.1.8, let $a_n$ be a sequence whos limit is 0. If for some $k > 0$ and some $m \in \mathbb{N}$ we have
+
+$$
+| s_n t_n - s | \le k |a_n|,  \ \ \text{for all} \ n \ge m,  
+$$
+and if $\lim a_n=0$, then it follows that $\lim s_n t_n = s$.
+
+
+To fit the theorem we let $a_n = s_n$ because $\lim s_n = 0$. Further, let $k = M + 1$ and $m=1$. By substitution the above becomes, 
+
+$$
+| s_n t_n | \le (M + 1)|s_n|,  \ \ \text{for all} \ n \ge 1.  
+$$
+
+Because we know that $|t_n| \le M$ for all $n \in \mathbb{N}$, we know that $(M + 1)|s_n| \ge  | s_n t_n |$ for all $n \in \mathbb{N}$. 
+
+Thus it follows that $\lim s_n t_n = 0$. 
+
+
+
+### Part (b)
+
+If $(t_n) = n^2$, which is not bounded, then $(t_n)$ could be any value from the interval $(- \infty, \infty)$. 
+
+This is problematic because we would not be able to find a $k$ sufficiently large enough such that $k|s_n| >  | s_n t_n |$.  
+
+
+
+
